@@ -1,0 +1,22 @@
+
+<div class="container">
+    <main>
+        <div class="peliculas-recomendadas contenedor">
+            <div class="contenedor-principal">
+                <button role="button" id="flecha-izquierda" class="flecha-izquierda"><i
+                        class="fas fa-angle-left"></i></button>
+                <div class="contenedor-carousel" >
+                    <div class="carousel">
+                        <div class="pelicula" *ngFor="let producto of Card">
+                            <a [routerLink]="['../producto', producto.id_producto]"><img src="https://www.duna.cl/media/2021/10/thriller.jpg" alt="" width="200" height="230"></a>
+                            <h5 class="h5">{{producto.titulo}}</h5>
+                            <p class="p">${{producto.valor}}</p>
+                        </div>
+                    </div>
+                </div>
+                <button role="button" id="flecha-derecha" class="flecha-derecha"><i class="fas fa-angle-right"></i></button>
+            </div>
+        </div>
+    </main>
+</div>
+

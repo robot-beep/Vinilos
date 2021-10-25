@@ -1,0 +1,54 @@
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+            <form>
+                <div class="mb-3">
+                    <label class="form-label">Id producto</label>
+                    <input [(ngModel)]="producto.id_producto" type="text" class="form-control" name="id_producto">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Titulo</label>
+                    <input [(ngModel)]="producto.titulo" type="text" class="form-control" name="titulo">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Autor</label>
+                    <input [(ngModel)]="producto.autor" type="text" class="form-control" name="autor">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Formato</label>
+                    <input [(ngModel)]="producto.formato" type="text" class="form-control" name="formato">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Estado</label>
+                    <input [(ngModel)]="producto.estado" type="text" class="form-control" name="estado">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">descuento</label>
+                    <input [(ngModel)]="producto.descuento" type="text" class="form-control" name="descuento">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Valor</label>
+                    <input [(ngModel)]="producto.valor" type="text" class="form-control" name="Valor">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Stock</label>
+                    <input [(ngModel)]="producto.stock" type="text" class="form-control" name="stock">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Imagen</label>
+                    <input [(ngModel)]="producto.imagen" type="text" class="form-control" name="imagen">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Rut Administrador</label>
+                    <input [(ngModel)]="producto.rut_adm_p" type="text" class="form-control" name="rut_adm_p">
+                </div>
+                <button (click)="agregar()" class="btn btn-primary">Agregar</button>
+            </form>
+        </div>
+        <div class="col-sm-6"></div>
+    </div>
+
+
+</div>

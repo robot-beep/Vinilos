@@ -1,0 +1,51 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+            <form>
+                <div class="mb-3">
+                    <label class="form-label">Id producto</label>
+                    <input [(ngModel)]="productModify.id_producto" type="text" class="form-control" name="id_producto">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Titulo</label>
+                    <input [(ngModel)]="productModify.titulo" type="text" class="form-control" name="titulo">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Autor</label>
+                    <input [(ngModel)]="productModify.autor" type="text" class="form-control" name="autor">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Formato</label>
+                    <input [(ngModel)]="productModify.formato" type="text" class="form-control" name="formato">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Estado</label>
+                    <input [(ngModel)]="productModify.estado" type="text" class="form-control" name="estado">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">descuento</label>
+                    <input [(ngModel)]="productModify.descuento" type="text" class="form-control" name="descuento">
+                </div>             <div class="mb-3">
+                    <label class="form-label">Valor</label>
+                    <input [(ngModel)]="productModify.valor" type="text" class="form-control" name="Valor">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Stock</label>
+                    <input [(ngModel)]="productModify.stock" type="text" class="form-control" name="stock">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Imagen</label>
+                    <input [(ngModel)]="productModify.imagen" type="text" class="form-control" name="imagen">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Rut Administrador</label>
+                    <input [(ngModel)]="productModify.rut_adm_p" type="text" class="form-control" name="rut_adm_p">
+                </div>
+                <button (click)="modificar(productModify.id_producto)" class="btn btn-primary" type="button">Agregar</button>
+            </form>
+        </div>
+        <div class="col-sm-6"></div>
+    </div>
+
+
+</div>

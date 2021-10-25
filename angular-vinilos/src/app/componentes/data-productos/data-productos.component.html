@@ -1,0 +1,37 @@
+<div class="container">
+    <button routerLink="/agregar" class="btn btn-primary">agregar</button>
+    <table class="table">
+        <thead> 
+            <tr>
+                <th scope="col">id_producto</th>
+                <th scope="col">titulo</th>
+                <th scope="col">autor</th>
+                <th scope="col">formato</th>
+                <th scope="col">estado </th>
+                <th scope="col">descuento</th>
+                <th scope="col">valor</th>
+                <th scope="col">stock</th>
+                <th scope="col">imagen</th>
+                <th scope="col">rut administrador</th>
+            </tr>
+        </thead>
+        <tbody *ngFor="let producto of card">
+            <tr>
+                <th scope="row">{{producto.id_producto}}</th>
+                <td>{{producto.titulo}}</td>
+                <td>{{producto.autor}}</td>
+                <td>{{producto.formato}}</td>
+                <td>{{producto.estado}}</td>
+                <td>{{producto.descuento}}</td>
+                <td>{{producto.valor}}</td>
+                <td>{{producto.stock}}</td>
+                <td>{{producto.imagen}}</td>
+                <td>{{producto.rut_adm_p}}</td>
+                <button type="button" class="btn btn-warning" [routerLink]="['../modificar', producto.id_producto]"> Modificar </button>
+                <button (click)="eliminar(producto.id_producto)" type="button" class="btn btn-danger">Eliminar</button>
+            </tr>
+        </tbody>
+    </table>
+
+
+</div>
